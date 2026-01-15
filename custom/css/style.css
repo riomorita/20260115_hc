@@ -1,0 +1,171 @@
+@charset "utf-8";
+/****************************
+* ページ共通
+*****************************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/********************
+* ヘッダー
+*********************/
+header {
+  width: 100%;
+  height: 450px;
+  background-image:url("img/02.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color: #989898;
+  text-transform: uppercase;
+  font-size: 32px;
+  padding: 12px 24px;
+  border: 2px solid;
+}
+/********************
+* メイン
+*********************/
+main {
+  padding: 100px 0;
+}
+
+/********************
+* フッター
+*********************/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background: #4a1c1c;
+}
+.copyright {
+  font-size: 14px;
+  color: #fff;
+}
+
+/********************
+* フォーム
+*********************/
+form {
+
+  width: 1000px;
+  max-width: 100%;
+
+  padding: 80px;
+  margin: auto;
+  background: #cccccc;
+}
+
+/*** 項目 ***/
+.form-item {
+  display: flex;
+  align-items: center;
+}
+.form-item + .form-item {
+  margin-top: 40px;
+}
+/* 見出し */
+.form-heading {
+  width: 250px;
+  font-weight: bold;
+  margin: 0;
+}
+/* 必須 */
+.require {
+  color: #fff;
+  background: #ed2424;
+  font-weight: normal;
+  padding: 4px 8px;
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 16px;
+}
+/* 入力欄（１行） */
+input {
+  width: 400px;
+  max-width: 100%;
+  padding: 8px;
+  border: none;
+  font-size: 16px;
+  line-height: 1.0;
+}
+/* 入力欄（複数行） */
+textarea {
+  width: 500px;
+  max-width: 100%;
+  min-height: 300px;
+  padding: 8px;
+  border: none;
+  font-size: 16px;
+  line-height: 1.6;
+  resize: vertical;
+}
+#contact-content p {
+  align-self: baseline;
+}
+/* ボタン（共通） */
+.btn-area {
+  margin-top: 80x;
+  display: flex;
+  justify-content: center;
+}
+button {
+  padding: 16px 32px;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+}
+
+button:hover {
+  opacity: 0.8;        /* 少し透過 */
+  cursor: pointer;    /* マウスカーソルを指マークに変更 */
+}
+
+/* ボタン（確認） */
+#btn_confirm {
+  background: #999;
+}
+
+/****************************
+* confirm.html（確認画面）
+*****************************/
+
+/* 入力済みエリア */
+.form-entered {
+  width: 500px;
+  max-width: 100%;
+}
+/* ボタン（確認ページ） */
+#confirm .btn-area {
+  gap: 40px;
+}
+/* ボタン（戻る） */
+#btn_back {
+   background: #666;
+}
+/* ボタン（送信） */
+#btn_submit {
+  background: #222;
+}
+
+/****************************
+* complete.html（送信完了）
+*****************************/
+#complete main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 450px - 80px);
+}
+/* ボタン（ホーム） */
+#btn_home {
+  background: #999;
+}
